@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 630px;
+}
+.container .box {
+  background-color: whitesmoke;
+  border-radius: 4px;
+  width: 700px;
+  height: 300px;
+}
+.container .box #bad-words {
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+.container .box .red-word {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.container .box .box-input {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.container .box .bad-word {
+  width: 66%;
+  height: 40px;
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid rgb(180, 178, 178);
+}
+.container .box .bad-word::-moz-placeholder {
+  font-size: 15px;
+  color: dimgray;
+}
+.container .box .bad-word::placeholder {
+  font-size: 15px;
+  color: dimgray;
+}
+.container .box .bad-word:focus {
+  outline: 1px solid rgb(151, 151, 151);
+  box-shadow: 0 0 2px 1px rgba(134, 177, 222, 0.847);
+}
+.container .box button {
+  font-size: 15px;
+}
+.container .box #add-word {
+  background-color: rgba(255, 224, 47, 0.921);
+  color: rgb(83, 83, 83);
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+.container .box #add-word:hover {
+  font-weight: bold;
+  outline: 2px solid rgba(171, 149, 25, 0.921);
+  background-color: rgba(233, 198, 2, 0.921);
+}
+.container .box #add-word:focus {
+  font-weight: bold;
+  outline: 3px solid rgba(191, 167, 33, 0.921);
+  background-color: rgba(252, 215, 3, 0.921);
+}
+.container .box #reset-input {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+.container .box #reset-input:hover {
+  font-weight: bold;
+  outline: 2px solid rgb(217, 60, 60);
+  background-color: rgb(223, 4, 4);
+  border: 1px solid rgb(186, 14, 14);
+}
+.container .box #reset-input:focus {
+  font-weight: bold;
+  outline: 3px solid rgb(198, 36, 36);
+  background-color: red;
+}
+.container .box #text {
+  margin: 17px 10px;
+  width: 97%;
+  height: 100px;
+  border-radius: 4px;
+  resize: none;
+  outline: 1px solid white;
+  padding: 10px;
+}
+.container .box #text:focus {
+  outline: 1px solid rgb(151, 151, 151);
+  box-shadow: 0 0 2px 1px rgba(134, 177, 222, 0.847);
+}
+.container .box #text::-moz-placeholder {
+  font-size: 15px;
+}
+.container .box #text::placeholder {
+  font-size: 15px;
+}
+.container .box #cenzor {
+  width: 97%;
+  height: 40px;
+  background-color: rgb(9, 151, 9);
+  color: white;
+  border: 1px solid green;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+.container .box #cenzor:hover {
+  font-weight: bold;
+  outline: 2px solid rgba(77, 150, 88, 0.921);
+  background-color: green;
+}
+.container .box #cenzor:focus {
+  font-weight: bold;
+  outline: 3px solid rgba(77, 150, 88, 0.921);
+  background-color: rgb(9, 151, 9);
+}
+.container .box .redBorder {
+  border: 2px solid red;
+}/*# sourceMappingURL=cenzor.component.css.map */

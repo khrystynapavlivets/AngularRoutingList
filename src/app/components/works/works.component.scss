@@ -1,0 +1,94 @@
+@import '../../shared/styles/variable';
+@import '../../shared/styles/base';
+@import '../../shared/styles/mixins';
+
+
+
+nav {
+    margin: 1rem auto;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+
+    ul {
+        display: flex;
+        align-items: end;
+
+        h3 {
+            width: 15rem;
+            padding-right: 1rem;
+            border-bottom: .1rem solid $bg-gray;
+            padding: 0 1rem .6rem 3rem;
+
+        }
+
+        li {
+            border-bottom: .1rem solid $bg-gray;
+            width: 7rem;
+            height: 3rem;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            padding-bottom: .6rem;
+
+            &:hover {
+                border-start-start-radius: .3rem;
+                border-top-right-radius: .3rem;
+                border-left: .1rem solid $bg-gray;
+                border-top: .1rem solid $bg-gray;
+                border-right: .1rem solid $bg-gray;
+                border-bottom: .1rem solid transparent;
+            }
+        }
+    }
+
+    .home {
+        width: 7rem;
+        height: 3rem;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        align-items: end;
+        padding-right: 3rem;
+        color: $bg-red;
+        cursor: pointer;
+        border-bottom: .1rem solid $bg-gray;
+        padding-bottom: .6rem;
+
+        :hover {
+            color: $bg-green;
+        }
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+        font-weight: 500;
+        display: block;
+        text-align: center;
+        color: $bg-blue;
+        cursor: pointer;
+
+        &.active {
+            background-color: $bg-blue;
+            color: $bg-green;
+            border-color: $bg-blue;
+            border-left: 1px solid $bg-gray;
+            border-top: 1px solid $bg-gray;
+            border-right: 1px solid $bg-gray;
+            border-bottom: none;
+            border-radius: 5px;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        &:hover {
+            color: $bg-green;
+
+        }
+    }
+}
+

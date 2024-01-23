@@ -1,0 +1,42 @@
+<table>
+    <thead>
+        <tr>
+            <th style="width: 5%;">#</th>
+            <th style="width: 25%;">Task</th>
+            <th style="width: 15%;">Check</th>
+            <th style="width: 25%;">Done/In progress</th>
+            <th style="width: 15%;">Edit</th>
+            <th style="width: 15%;">Delite</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (task of tasks; track $index) {
+        <ng-container>
+            @if (task.name.trim() !== '') {
+            <tr>
+                <td>{{ $index + 1 }}</td>
+                <td>{{task.name}}</td>
+                <td><input type="checkbox" [disabled]="isControlDisabled($index)" [(ngModel)]="task.done"></td>
+                <td [style.color]="task.done ? 'green' : 'red'">{{ task.done ? 'Done' : 'In progress' }}</td>
+                <td><button class="edit-btn" (click)="editTask($index)" [disabled]="task.done"> Edit</button></td>
+                <td><button class="delite-btn" (click)="deleteTask($index)" [disabled]="!task.done">Delete</button></td>
+            </tr>
+            }
+        </ng-container>
+        }
+        @if (isEditing) {
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <input type="text" class="editTaskInput" [(ngModel)]="editedTaskName">
+            </td>
+            <td>
+                <button class="editTaskBtn" (click)="saveTask()">Save</button>
+            </td>
+        </tr>
+        }
+
+    </tbody>
+</table>

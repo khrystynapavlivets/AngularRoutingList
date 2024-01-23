@@ -1,0 +1,33 @@
+.container {
+  width: 70%;
+  margin: 20px auto;
+}
+.container .newTask {
+  display: flex;
+  justify-content: space-between;
+}
+.container .newTaskInput {
+  width: 73%;
+  height: 35px;
+  margin-bottom: 20px;
+}
+.container .newTaskAdd {
+  width: 22%;
+  height: 40px;
+  border: 1px solid rgba(16, 100, 38, 0.884);
+  background-color: rgb(19, 150, 52);
+  box-shadow: 1px 1px 3px 1px rgba(16, 100, 38, 0.884);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+}
+.container .newTaskAdd:hover {
+  font-weight: bold;
+  outline: 2px solid rgba(77, 150, 88, 0.921);
+  background-color: rgb(15, 118, 41);
+}
+.container .newTaskAdd:focus {
+  font-weight: bold;
+  outline: 4px solid rgba(77, 150, 88, 0.921);
+  background-color: rgb(9, 151, 9);
+}/*# sourceMappingURL=task-list.component.css.map */

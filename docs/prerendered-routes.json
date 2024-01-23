@@ -1,0 +1,9 @@
+{
+  "routes": [
+    "/home",
+    "/works",
+    "/works/cenzor",
+    "/works/tasklist",
+    "/works/userlist"
+  ]
+}

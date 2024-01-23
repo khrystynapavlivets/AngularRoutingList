@@ -1,0 +1,141 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.2 | 20191019
+   License: none (public domain)
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+nav {
+  margin: 1rem auto;
+  width: 100%;
+  display: flex;
+  list-style: none;
+  font-size: 1.3rem;
+}
+nav ul {
+  display: flex;
+  align-items: end;
+}
+nav ul h3 {
+  width: 15rem;
+  padding-right: 1rem;
+  border-bottom: 0.1rem solid #ddd;
+  padding: 0 1rem 0.6rem 3rem;
+}
+nav ul li {
+  border-bottom: 0.1rem solid #ddd;
+  width: 7rem;
+  height: 3rem;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 0.6rem;
+}
+nav ul li:hover {
+  border-start-start-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  border-left: 0.1rem solid #ddd;
+  border-top: 0.1rem solid #ddd;
+  border-right: 0.1rem solid #ddd;
+  border-bottom: 0.1rem solid transparent;
+}
+nav .home {
+  width: 7rem;
+  height: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: end;
+  padding-right: 3rem;
+  color: #f42;
+  cursor: pointer;
+  border-bottom: 0.1rem solid #ddd;
+  padding-bottom: 0.6rem;
+}
+nav .home :hover {
+  color: #0a4;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  color: #0f89f3;
+  cursor: pointer;
+}
+nav a.active {
+  background-color: #0f89f3;
+  color: #0a4;
+  border-color: #0f89f3;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: none;
+  border-radius: 5px;
+}
+nav a.active:hover {
+  color: #fff;
+}
+nav a:hover {
+  color: #0a4;
+}/*# sourceMappingURL=works.component.css.map */

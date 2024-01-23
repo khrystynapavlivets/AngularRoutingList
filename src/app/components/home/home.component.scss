@@ -1,0 +1,97 @@
+@import '../../shared/styles/variable';
+@import '../../shared/styles/base';
+@import '../../shared/styles/mixins';
+
+
+body {
+    background-color: rgb(244, 245, 247);
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgb(27, 27, 27);
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh;
+    flex-wrap: wrap;
+  
+
+    .card {
+        width: 300px;
+        height: 300px;
+        background-color: $bg-gray-light;
+        border: .2rem solid $bg-gray;
+        border-radius: .5rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 8px $bg-shadow;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            height: 200px;
+            max-width: 100%;
+            object-fit: contain;
+            background-color: $bg-white;
+            border-radius: .5rem;
+        }
+
+        h4 {
+            font-weight: 500;
+            color: $bg-red;
+            text-align: center;
+            padding-bottom: 0.9rem;
+            background-color: $bg-white;
+            font-weight: bold;
+        }
+
+        hr {
+            border: 1px solid $bg-gray;
+        }
+    }
+}
+
+button {
+    width: 95%;
+    padding: .375rem .75rem;
+    cursor: pointer;
+    border: 1px solid $bg-gray;
+    border-radius: .3rem;
+    font-size: inherit;
+    margin: 0.5rem auto;
+    background-color: $bg-green;
+    color: #fff;
+    border: 1px solid $bg-green;
+    transition: background-color .8s, color .8s;
+
+    .router-active {
+        background-color: $bg-blue;
+        color: #fff;
+        border-color: $bg-blue;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &:focus {
+        outline: .25em solid $bg-focus;
+    }
+
+    &:hover {
+        background-color: lighten($bg-green, 10%);
+        color: darken($bg-green, 10%);
+    }
+
+}
+.container.closed {
+    display: none;
+}

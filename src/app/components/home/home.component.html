@@ -1,0 +1,21 @@
+<div class="container" [ngClass]="{ 'closed': isContainerClosed }">
+    <div class="card">
+        <img src="../../../assets/cenzor.png" alt="Censor">
+        <h4>Angular Censor</h4>
+        <hr>
+        <button routerLink="/works/cenzor" routerLinkActive="active" aria-current="page" (click)="closeContainer()">Details</button>
+    </div>
+    <div class="card">
+        <img src="../../../assets/user-list.png" alt="User List">
+        <h4>Angular User List</h4>
+        <hr>
+        <button routerLink="/works/userlist" routerLinkActive="active" aria-current="page" (click)="closeContainer()">Details</button>
+    </div>
+    <div class="card">
+        <img src="../../../assets/task-list.png" alt="Task List">
+        <h4>Angular Task List</h4>
+        <hr>
+        <button routerLink="/works/tasklist" routerLinkActive="active"aria-current="page" (click)="closeContainer()">Details</button>
+    </div>
+</div>
+<router-outlet></router-outlet>

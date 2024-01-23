@@ -1,0 +1,88 @@
+table {
+  width: 100%;
+  margin: 1.25rem auto;
+  border-collapse: collapse;
+}
+table tr,
+table th,
+table td {
+  border-bottom: 1px solid rgb(189, 181, 181);
+  border-top: 1px solid rgb(189, 181, 181);
+  padding: 1rem;
+  text-align: start;
+  font-size: 1.3rem;
+}
+table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+table button {
+  border: 2px solid rgb(189, 181, 181);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+table button.edit-btn {
+  width: 4rem;
+  background-color: rgba(255, 173, 22, 0.938);
+  border-color: rgba(255, 173, 22, 0.938);
+  color: #000;
+}
+table button.edit-btn:focus {
+  font-weight: bold;
+  outline: 0.25rem solid rgb(253, 216, 147);
+}
+table button.edit-btn:not(:disabled):hover {
+  font-weight: bold;
+  outline: 0.2rem solid rgb(253, 216, 147);
+  background-color: rgb(243, 173, 42);
+}
+table button.edit-btn:disabled {
+  border-color: transparent;
+  background-color: rgb(253, 216, 147);
+  cursor: not-allowed;
+}
+table button.delite-btn {
+  width: 5rem;
+  background-color: rgb(237, 45, 45);
+  border-color: rgb(237, 45, 45);
+  color: rgb(255, 255, 255);
+}
+table button.delite-btn:focus {
+  outline: 0.25rem solid rgb(212, 7, 7);
+  font-weight: bold;
+}
+table button.delite-btn:not(:disabled):hover {
+  font-weight: bold;
+  outline: 0.2rem solid rgb(237, 45, 45);
+  background-color: rgb(226, 65, 65);
+}
+table button.delite-btn:disabled {
+  border-color: transparent;
+  background-color: rgba(249, 156, 170, 0.5);
+  cursor: not-allowed;
+}
+table button.editTaskBtn {
+  width: 4rem;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgba(16, 100, 38, 0.884);
+  background-color: rgb(19, 150, 52);
+}
+table button.editTaskBtn:hover {
+  font-weight: bold;
+  outline: 2px solid rgba(77, 150, 88, 0.921);
+  background-color: rgb(15, 118, 41);
+}
+table button.editTaskBtn:focus {
+  font-weight: bold;
+  outline: 4px solid rgba(77, 150, 88, 0.921);
+  background-color: rgb(9, 151, 9);
+}
+table .editTaskInput {
+  width: 200px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid rgb(189, 181, 181);
+  outline: none;
+  font-size: 20px;
+}/*# sourceMappingURL=child.component.css.map */
