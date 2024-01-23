@@ -1,0 +1,12 @@
+@mixin border-radius( $start-start, $top-right, $bottom-right, $bottom-left) {
+    border-start-start-radius: $start-start;
+    border-top-right-radius: $top-right;
+    border-bottom-right-radius: $bottom-right;
+    border-bottom-left-radius: $bottom-left;
+  }
+  @mixin border-all($color, $width: 1px, $style: solid) {
+    border-left: $width $style $color;
+    border-top: $width $style $color;
+    border-right: $width $style $color;
+   
+  }
